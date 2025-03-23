@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="DemoTableViewCell" customModule="TableView" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoTableViewCell2" rowHeight="91" id="KGk-i7-Jjw" customClass="DemoTableViewCell2" customModule="TableView" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="459" height="91"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R26-gx-eTe">
-                        <rect key="frame" x="10" y="35" width="334" height="20"/>
+                        <rect key="frame" x="10" y="35" width="334" height="20.333333333333329"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" systemColor="systemYellowColor"/>
@@ -43,15 +43,15 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="textlabel" destination="R26-gx-eTe" id="MBG-zL-snY"/>
-                <outlet property="uiImageView" destination="wQw-Ir-IoS" id="Rg9-R9-bVs"/>
+                <outlet property="textLabelOne" destination="R26-gx-eTe" id="hnA-sT-P1x"/>
+                <outlet property="uiImageView" destination="wQw-Ir-IoS" id="xQO-0l-geg"/>
             </connections>
-            <point key="canvasLocation" x="212.97709923664121" y="36.267605633802816"/>
+            <point key="canvasLocation" x="100" y="21"/>
         </tableViewCell>
     </objects>
     <resources>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

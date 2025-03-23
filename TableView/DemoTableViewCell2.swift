@@ -7,10 +7,15 @@
 
 import UIKit
 
-class DemoTableViewCell: UITableViewCell {
-    @IBOutlet weak var textlabel: UILabel!
+class DemoTableViewCell2: UITableViewCell {
+//    @IBOutlet weak var textlabel: UILabel!
     @IBOutlet weak var uiImageView: UIImageView!
+    @IBOutlet weak var textLabelOne: UILabel!
 
+//    static let identifier = "DemoTableViewCell2"
+//    static func  nib() -> UINib {
+//        return UINib(nibName: "DemoTableViewCell2", bundle: nil)
+//    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
