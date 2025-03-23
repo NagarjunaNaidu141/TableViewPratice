@@ -13,6 +13,7 @@ class CustomTableCell3ViewController: UIViewController, UITableViewDelegate, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
 //        table.register(DemoCustomcellTableViewCell.nib(), forCellReuseIdentifier: DemoCustomcellTableViewCell.identifier)
+        table.register(Field3TableViewCell.nib(), forCellReuseIdentifier: Field3TableViewCell.identifier)
         table.register(UINib(nibName: "DemoCustomcellTableViewCell", bundle: nil), forCellReuseIdentifier: DemoCustomcellTableViewCell.identifier)
 
         table.dataSource = self
@@ -21,14 +22,20 @@ class CustomTableCell3ViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 9
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("indexPath.row:\(indexPath.row)")
-        if indexPath.row > 2 {
+        
+        if indexPath.row > 5 {
             let customCell = table.dequeueReusableCell(withIdentifier: "DemoCustomcellTableViewCell", for: indexPath) as! DemoCustomcellTableViewCell
             customCell.configure(with: "Custom Cell", myImage: "gear")
             return customCell
+        }
+        if indexPath.row > 2 {
+            let fieldCell = table.dequeueReusableCell(withIdentifier: "Field3TableViewCell", for: indexPath) as! Field3TableViewCell
+            
+            return fieldCell
         }
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = "hello World!!"

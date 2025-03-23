@@ -13,6 +13,7 @@ class TableViewCustomCellsViewController: UIViewController, UITableViewDelegate,
     let names = ["image1","Image2","Image3","Image4","Image5","Image6","Image7","Image8","Image9","Image10"]
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         let nib = UINib(nibName: "DemoTableViewCell2", bundle: nil)
         tableViewCustom.register(nib, forCellReuseIdentifier: "DemoTableViewCell2")
         tableViewCustom.delegate = self
@@ -32,10 +33,6 @@ class TableViewCustomCellsViewController: UIViewController, UITableViewDelegate,
         }
         return UITableViewCell()
         
-//        let cell = tableViewCustom.dequeueReusableCell(withIdentifier: "DemoTableViewCell2", for: indexPath) as! DemoTableViewCell2
-////        cell.textlabelOne.text = names[indexPath.row]
-////        cell.uiImageView.backgroundColor = .red
-//        return cell
     }
 
 }
